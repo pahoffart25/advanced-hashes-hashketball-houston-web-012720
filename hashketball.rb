@@ -225,3 +225,15 @@ def player_with_longest_name
   return player_with_long_name
 end
 end
+
+def long_name_steals_a_ton
+steals = 22
+game_hash.each do |team, team_info|
+  team_info [:players].each do |player|
+    if [:steals] > steals
+      return false
+    else
+      return true
+    end
+  end
+end
