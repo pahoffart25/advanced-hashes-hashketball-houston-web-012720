@@ -236,4 +236,3 @@ game_hash.each do |team, team_info|
       return true
     end
   end
-end
