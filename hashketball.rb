@@ -230,7 +230,7 @@ def long_name_steals_a_ton?
 steals = 22
 game_hash.each do |team, team_info|
   team_info [:players].each do |player|
-    if [:steals].to_i > steals
+    if player[:steals] > steals
       return false
     else
       return true
